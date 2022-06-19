@@ -28,7 +28,7 @@ public class Switchcase {
 		    System.out.println("Sunday");
 		    break;
 		  default:
-			    System.out.println("Looking forward to the Weekend");
+		    System.out.println("Looking forward to the Weekend");
 		}
 	}
 
