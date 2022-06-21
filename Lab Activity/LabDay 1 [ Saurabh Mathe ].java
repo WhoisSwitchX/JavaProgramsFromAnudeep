@@ -11,7 +11,7 @@ Name : Saurabh S. Mathe.
 // If Statement
 
 
-public class ifstatement {
+public class IfStatement {
 
 	public static void main(String[] args) {
 		int n = 10;
@@ -34,7 +34,7 @@ using if else.
 // If else Statement
 
 
-public class ifelse {
+public class IfElse {
 
 	public static void main(String[] args) {
 		
@@ -62,7 +62,7 @@ user based on user's age.
 // If else if Statement
 
 
-public class ifelseifEx {
+public class IfElseIf {
 
 	public static void main(String[] args) {
 		int a=26;
@@ -112,7 +112,7 @@ decrpyt it to show the corrent grade.
 // Type casting
 
 
-public class typecastings {
+public class TypeCastings {
 
 	public static void main(String[] args) {
 		char a = 'b';
