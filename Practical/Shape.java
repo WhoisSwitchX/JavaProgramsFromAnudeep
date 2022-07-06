@@ -1,16 +1,17 @@
+/*
+ * @ Author Saurabh Mathe
+ */
 package SwitchX;
 
 class Circle {
 
 	float radius;
 
-	Circle()
-	{
-
+	Circle(){
+		
 		radius = 1.5f;
 	}
-	void Disp() 
-	{
+	void Disp() {
 		System.out.println("Radius of the circle: " + radius);
 	}
 }
