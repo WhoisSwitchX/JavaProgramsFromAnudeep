@@ -1,4 +1,6 @@
-
+/*
+ * @ Author Saurabh Mathe
+ */
 package SwitchX;
 import java.util.Scanner;
 public class KidsLaptopManufacturer {
