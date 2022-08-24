@@ -1,0 +1,86 @@
+show databases;
+create database Capgemini;
+use Capgemini;
+create table Employee(
+Emp_ID int primary key;
+First_Name varchar(25);
+Last_Name varchar(25);
+Salary int(10);
+Joining_Date;
+Department varchar(20)
+);
+create table if not exists  Employee(
+Emp_ID int primary key;
+First_Name varchar(25);
+Last_Name varchar(25);
+Salary int(10);
+Joining_Date;
+Department varchar(20)
+);
+
+create table reward(
+Date_Reward Date,
+Amount int,
+Employee_ID int references Employee(Emp_ID)
+);
+insert into Employee(empid,Fname,Lname,salary,DOJ,Department)
+values(001,'Saurabh','Mathe',125000,'2022-06-03','Full Stack Developer'),
+(002,'Aniket','Wagh',95000,'2022-01-23','DevOP Engineer'),
+(003,'Pawan','Shinde',65000,'2022-06-21','Data Analyst'),
+(004,'Krishna','Dahiphale',94000,'2022','Tester'),
+(005,'Lahoo','Chavan',750000,'2022-09-25','Java Developer'),
+(006,'Sumit','Shinde',94000,'2022-07-06','Software Engineer'),
+
+insert into reward(Date_Reward,Amount,Employee_ID)
+values('2022-08-10',100000,001),
+('2022-08-10',20000,002),
+('2022-08-10',30000,004),
+('2022-08-10',40000,005);
+#get all Employee
+select*from  Employee1;
+
+
+
+#disply first name and last name of employee from Employee
+select First_Name,Last_Name
+from Employee;
+
+#Display all the values of the “First_Name” column using the alias “Employee Name”
+select Fname  " Employee Name" from Employee;
+
+#Get all “Last_Name” in lowercase.
+select lower(Last_Name) from Employee;
+
+#Get all “Last_Name” in uppercase.
+select upper(Last_Name) from Employee;
+
+#Get unique “DEPARTMENT”.
+select distinct Department from Employee;
+
+#Get the first 4 characters of “FIRST_NAME” column.
+select substring(First_Name ,1,4)
+from Employee;
+
+#Get the position of the letter ‘h’ in ‘John’.
+select position("h" in "Saurabh");
+
+#Get all values from the “FIRST_NAME” column after removing white space on the right.
+select Rtrim(First_Name)from Employee;
+
+#Get all values from the “FIRST_NAME” column after removing white space on the left.
+select Ltrim(First_Name)from Employee;
+
+#Get all employees in ascending order by first name.
+select*from Employee order by First_Name asc;
+
+#Get all employees in descending order by first name.
+select*from Employee order by First_Name desc;
+
+#Get all employees in ascending order by first name and descending order by salary.
+select * from Employee order by First_Name asc ,Salary desc; 
+
+#Get employees whose first name is neither “Bob” nor “Alex”. 
+select * from Employee where First_Name not in('Aniket','Wagh');
+
+#Get employees whose first name is “Bob” or “Alex”.
+select * from Employee where First_Name in ('Saurabh','Mathe');
