@@ -1,5 +1,6 @@
 # Use Database
 use saurabh;
+
 # 1 Create table Employee
 create table EMPLOYEE(
 employee_id int(6),
