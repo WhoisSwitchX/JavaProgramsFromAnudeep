@@ -1,0 +1,8 @@
+package com.oxforduniversity.dao;
+
+public interface UniversityDao {
+	
+	public void addUniversity(); //  adding new department with students
+	public void fetchUniversity(); // fetching existing students
+	
+}

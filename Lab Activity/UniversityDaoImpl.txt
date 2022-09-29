@@ -1,0 +1,102 @@
+package com.oxforduniversity.daoimpl;
+
+import java.util.ArrayList;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.oxforduniversity.config.HibernateUtil;
+import com.oxforduniversity.dao.UniversityDao;
+import com.oxforduniversity.entity.University;
+import com.oxforduniversity.entity.Student;
+
+public class UniversityDaoImpl implements UniversityDao {
+
+	Session session = HibernateUtil.getSessionFactory().openSession();
+	Transaction t = session.beginTransaction();
+	@SuppressWarnings("deprecation")
+	
+	public void addUniversity() {
+		
+		University u = new University();
+
+		u.setUid(1);
+		u.setUniversity_Name(" Oxford University ");
+		u.setLocation("Ghatkopar");
+		u.setEmail("ox.ac.uk@hotmail.com");
+		u.setPhone_No(442700000);
+
+		Student s = new Student();
+
+		s.setSid(101);
+		s.setStudent_Name(" Aniket Wagh ");
+		s.setStream("Technical");
+		s.setStudent_Class("A");
+		s.setStudent_Addr("California");
+		s.setGender("Male");
+		s.setStudent_Phone(946588464);
+
+		Student s1 = new Student();
+
+		s1.setSid(102);
+		s1.setStudent_Name(" Pawan Shinde ");
+		s1.setStream("Mechanical");
+		s1.setStudent_Class("B");
+		s1.setStudent_Addr("Amsterdam");
+		s1.setGender("Male");
+		s1.setStudent_Phone(908225567);
+
+		Student s2 = new Student();
+
+		s2.setSid(103);
+		s2.setStudent_Name(" Saurabh Mathe ");
+		s2.setStream("Data Analyst");
+		s2.setStudent_Class("C");
+		s2.setStudent_Addr("Paris");
+		s2.setGender("Male");
+		s2.setStudent_Phone(987458454);
+		
+		Student s3 = new Student();
+
+		s3.setSid(104);
+		s3.setStudent_Name(" Abhishek Bansode ");
+		s3.setStream("Painter");
+		s3.setStudent_Class("A");
+		s3.setStudent_Addr("Mahim");
+		s3.setGender("Male");
+		s3.setStudent_Phone(894654639);
+		
+		Student s4 = new Student();
+
+		s4.setSid(105);
+		s4.setStudent_Name(" Aayesha Sing ");
+		s4.setStream("Doctor");
+		s4.setStudent_Class("A");
+		s4.setStudent_Addr("Lonodn");
+		s4.setGender("Female");
+		s4.setStudent_Phone(987849664);
+		
+
+		ArrayList<Student> a1 = new ArrayList<Student>();
+		a1.add(s);
+		a1.add(s1);
+		a1.add(s2);
+		a1.add(s3);
+		a1.add(s4);
+
+		u.setStudent(a1);
+		session.save(u);
+		t.commit();
+		System.out.println(" inserted successfully");
+	
+
+	}
+	
+
+	public void fetchUniversity() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+}
