@@ -9,6 +9,7 @@ public class App
         
     	UniversityDaoImpl ddao = new  UniversityDaoImpl();
     			ddao.addUniversity();
+                ddao.fetchUniversity();
     	
     }
 }
