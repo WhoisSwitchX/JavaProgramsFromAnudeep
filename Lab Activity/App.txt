@@ -8,7 +8,7 @@ public class App
     {
         
     	UniversityDaoImpl ddao = new  UniversityDaoImpl();
-    			ddao.addUniversity();
+                ddao.addUniversity();
                 ddao.fetchUniversity();
     	
     }
