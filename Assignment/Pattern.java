@@ -2,7 +2,7 @@
  * @ Author Saurabh Mathe
  */
 package Assignment;
-
+ 
 public class Pattern {
 
 	public static void main(String[] args) 
