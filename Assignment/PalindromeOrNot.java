@@ -1,7 +1,7 @@
 /*
  * @ Author Saurabh
  */
-
+ 
 package SwitchX;
 
 public class PalindromeOrNot {
