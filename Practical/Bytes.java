@@ -4,7 +4,7 @@ public class Bytes {
 
 	public static void main(String[] args) {
 		
-		byte b1,b2;
+		byte b1,b2; 
 		
 		b1=-128;
 		b2=67;
