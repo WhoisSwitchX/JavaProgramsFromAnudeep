@@ -3,7 +3,7 @@
  */
 
 
-package SwitchX;
+package SwitchX; 
 
 public class FibonacciSeries {
 
