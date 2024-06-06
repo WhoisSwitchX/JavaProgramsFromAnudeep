@@ -22,7 +22,7 @@ class Student{
 		System.out.println("Marks Secured= "+ marks + " Grade: " + grade);
 	}
 }
-public class PVG {
+public class Main {
 	public static void main(String[] args) {
 		
 		System.out.println("Academic Topper of PVG'S College");
